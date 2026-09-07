@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "FANZA Video Player Wide",
+  "version": "1.0",
+  "description": "FANZA月額動画の作品ページでサイドカラムを非表示にしてプレイヤーを大きく表示する",
+  "content_scripts": [
+    {
+      "matches": ["https://www.dmm.co.jp/monthly/*/-/detail/*"],
+      "css": ["hide.css"]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+/* サイドカラム（タブ・レビュー・作品情報）を非表示にしてプレイヤーを全幅化 */
+.side-column {
+  display: none !important;
+}
