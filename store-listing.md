@@ -22,6 +22,22 @@ FANZA月額動画（見放題ch など）の作品詳細ページで、右側の
 - ユーザーデータの収集・利用・共有: なし
 - プライバシーポリシー欄には本リポジトリ README の URL を記載可: https://github.com/noricha-vr/fanza-video
 
+## デベロッパーダッシュボード入力用の申告文
+
+- **単一用途（Single purpose）**: FANZA月額動画の作品詳細ページのサイドカラムを非表示にし、動画プレイヤーを大きく表示する。
+- **ホスト権限の正当化**: `https://www.dmm.co.jp/monthly/*/-/detail/*` は本拡張の対象ページそのものであり、サイドカラム非表示のCSSを注入するために必要。他のページ・サイトには一切アクセスしない。
+- **権限**: permissions は空（content_scripts の CSS 注入のみ）。
+- **リモートコード**: 使用しない。
+- **データ使用の申告**: すべての項目で「収集しない」を選択。
+- **プライバシーポリシー URL**: https://github.com/noricha-vr/fanza-video/blob/main/PRIVACY.md
+- **成人向け**: 「成人向けコンテンツ」フラグを ON（対象サイトがアダルトのため）。
+
+## 画像アセット
+
+- スクリーンショット（1280x800・最低1枚）: `docs/tmp/screenshots/before-1280x800.png` / `after-1280x800.png`
+  - 注意: ストア掲載画像に露骨な性的画像は不可。サムネイル等が写り込む場合はモザイク・ぼかしを入れること
+- 小プロモタイル（440x280・任意）: `docs/store-assets/promo-tile-440x280.png`
+
 ## 提出手順
 
 1. https://chrome.google.com/webstore/devconsole で開発者登録（初回 $5）
